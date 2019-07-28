@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <header>
+    <h1 id="option">Slot machine game</h1>
+  </header>
+
+  <!-- condition for determineWinner -->
+  <section class="rule">
+    <h2>Rules of the Game</h2>
+    <p id="rules">3 ducks = win</p>
+    <p id="rules">3 frogs = win</p>
+    <p id="rules">3 zebras = win</p>
+    <p id="rules">3 cows  = win</p>
+    <p id="rules">3 dogs = win</p>
+    </section>
+    <section class="bet">
+    <button id="fifty" type="button" name="button">$50</button>
+    <button id="five" type="button" name="button">$5</button>
+    <p id="reelOne">result</p>
+    <p id="reelTwo">result</p>
+    <p id="reelThree">result</p>
+    </section>
+
+    <form class="" action="/input" method="POST">
+      <input type="text" name="userBet" placeholder="Cash amount to bet">
+      <button id="send" type="submit" name="button">Send Amount</button>
+    </form>
+    <% if (bet.length > 0) { %>
+      <p id="userB"><%= bet[0].bet %></p>
+    <% } %>
+
+<button id="reset" type="click" name="button">New Game</button>
+
+<script src = 'javascript/main.js'>
+
+</script>
